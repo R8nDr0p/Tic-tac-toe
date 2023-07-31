@@ -1,0 +1,178 @@
+  @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    font-family: "Montserrat";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+}
+
+.logOutBtn{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup, .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 400px;
+}
+.signup label, .login label{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.signup input, .login input{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.signup input:focus, .login input:focus{
+    width: 100%;
+}
+
+.signup button, .login button{
+    width: 30%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.signup button:hover, .login button:hover{
+    background-color: red;
+    box-shadow: red 0px 0px 10px;
+}
+
+.joinGame{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinGame h4 {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    animation: breathing 4s infinite ease-in-out;
+  }
+  
+  @keyframes breathing {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+
+
+
+.joinGame input{
+    width: 20%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1.5rem;
+}
+
+.joinGame input:focus{
+    width: 100%;
+}
+
+.joinGame button{
+    width: 50%;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.joinGame button:hover{
+    background-color: red;
+    box-shadow: red 0px 0px 10px;
+}
+
+.board{
+    width: 500px;
+    height: 500px;
+    background-color:antiquewhite;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    flex: 33%;
+    display: flex;
+    flex-direction: row;
+}
+
+.square {
+    flex: 33%;
+    height: 100%;
+    border:1px solid black;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.square:active {
+    background-color: red;
+    color: #fff;
+}
